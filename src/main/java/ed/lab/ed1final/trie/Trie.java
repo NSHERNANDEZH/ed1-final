@@ -10,8 +10,8 @@ public class Trie {
 
     private static class TrieNode {
         Map<Character, TrieNode> children = new HashMap<>();
-        int wordCount = 0;     // Cuántas veces termina una palabra aquí
-        int prefixCount = 0;   // Cuántas palabras pasan por aquí
+        int wordCount = 0;     //contadores de palabras
+        int prefixCount = 0;
     }
 
     private final TrieNode root;
@@ -53,7 +53,7 @@ public class Trie {
     }
 
     public void erase(String word) {
-        if (countWordsEqualTo(word) == 0) return; // No existe la palabra, no hay nada que borrar
+        if (countWordsEqualTo(word) == 0) return;
 
         TrieNode current = root;
         for (char ch : word.toCharArray()) {
@@ -69,4 +69,4 @@ public class Trie {
 
 
 
-//Solution
+

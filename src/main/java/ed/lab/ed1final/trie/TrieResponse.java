@@ -6,7 +6,7 @@ public class TrieResponse {
     private Integer wordsEqualTo;
     private Integer wordsStartingWith;
 
-    // Getters y setters
+
     public String getWord() {
         return word;
     }
